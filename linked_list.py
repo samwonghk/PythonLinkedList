@@ -16,7 +16,7 @@ class Node:
         return str(self.data)
 
     def __len__(self):
-        if self.data is str:
+        if self.data.__len__ is not None:
             return len(self.data)
         else:
             return 0
